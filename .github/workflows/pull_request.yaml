@@ -5,15 +5,10 @@ jobs:
   checkov-job:
     runs-on: ubuntu-latest
     name: checkov-action
-    env:
-      API_KEY_VARIABLE=1d4afaaf-4a41-5946-923e-9756f222f16f
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@master
-
-      - name: Run Checkov action
-        id: checkov
-        uses: bridgecrewio/checkov-action@master
+      - name: Run Bridgecrew 
+        id: Bridgecrew
+        uses: bridgecrewio/bridgecrew-action@master
         with:
-          directory: terraform
-          framework: terraform # optional: run only on a specific infrastructure {cloudformation,terraform,kubernetes,all}
+         api-key: 1d4afaaf-4a41-5946-923e-9756f222f16f
+         directory: "terraform"
