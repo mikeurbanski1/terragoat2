@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       - run: pip install checkov
-      - run: checkov -d terraform --bc-api-key 1d4afaaf-4a41-5946-923e-9756f222f16f
+      - run: checkov -d terraform --bc-api-key 1d4afaaf-4a41-5946-923e-9756f222f16f --repo-id $CIRCLE_PROJECT_REPONAME --branch $CIRCLE_BRANCH
 
 # Orchestrate our job run sequence
 workflows:
