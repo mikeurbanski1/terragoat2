@@ -5,6 +5,8 @@ jobs:
   checkov-job:
     runs-on: ubuntu-latest
     name: checkov-action
+    env:
+      API_KEY_VARIABLE=1d4afaaf-4a41-5946-923e-9756f222f16f
     steps:
       - name: Checkout repo
         uses: actions/checkout@master
