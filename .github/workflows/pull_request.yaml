@@ -13,5 +13,5 @@ jobs:
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
-          directory: terraform/aws
+          directory: terraform
           framework: terraform # optional: run only on a specific infrastructure {cloudformation,terraform,kubernetes,all}
