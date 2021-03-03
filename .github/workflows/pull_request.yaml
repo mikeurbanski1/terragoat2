@@ -12,4 +12,3 @@ jobs:
         with:
          api-key: 1d4afaaf-4a41-5946-923e-9756f222f16f
          directory: terraform
-         check: CKV_AWS_19
