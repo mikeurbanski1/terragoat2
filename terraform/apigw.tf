@@ -26,6 +26,7 @@ resource "aws_api_gateway_rest_api" "a" {
   }
 }
 
+
 resource "aws_api_gateway_rest_api" "example" {
   body = jsonencode({
     openapi = "3.0.1"
