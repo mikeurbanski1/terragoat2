@@ -17,4 +17,7 @@ resource "aws_dynamodb_table" "example" {
   replica {
     region_name = "us-west-2"
   }
+  point_in_time_recovery {
+    enabled = true
+  }
 }
