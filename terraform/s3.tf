@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "financials" {
   bucket        = "fff1"
-  acl           = "private"
+  acl           = "public-read"
   force_destroy = true
 }
