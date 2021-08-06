@@ -18,3 +18,24 @@ resource "aws_dynamodb_table" "example" {
     region_name = "us-west-2"
   }
 }
+
+module "dynamodb_table" {
+  source   = "terraform-aws-modules/dynamodb-table/aws"
+
+  name     = "my-table"
+  hash_key = "id"
+
+  attributes = [
+    {
+      name = "id"
+      type = "N"
+    }
+  ]
+
+  tags = {
+    Terraform   = "true"
+    Environment = "staging"
+  }
+
+  server_side_encryption_enabled = false
+}
