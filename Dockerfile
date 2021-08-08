@@ -1,0 +1,3 @@
+EXPOSE 22
+ADD .
+USER root
