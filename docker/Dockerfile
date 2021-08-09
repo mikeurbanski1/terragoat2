@@ -1,1 +1,3 @@
 EXPOSE 22
+ADD .
+USER xyz
