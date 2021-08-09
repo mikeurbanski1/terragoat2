@@ -1,1 +1,2 @@
 EXPOSE 22
+USER root
