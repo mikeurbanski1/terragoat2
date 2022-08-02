@@ -22,7 +22,6 @@ jobs:
           directory: '.'
           log_level: DEBUG
           soft_fail: true
-          api-key: ${{ secrets.BC_API_KEY }}
       - name: Expose report
         uses: actions/upload-artifact@v2
         with:
