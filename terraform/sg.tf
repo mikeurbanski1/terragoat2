@@ -25,7 +25,8 @@ resource "aws_security_group" "sg" {
   }
   name = "bc-aurora-cluster-bastion-sg"
   tags = {
-    Name = "bc-aurora-cluster-bastion-sg-BastionSecurityGroup"
+    Name      = "bc-aurora-cluster-bastion-sg-BastionSecurityGroup"
+    yor_trace = "bdb6ab2c-92ce-4342-9b94-d7e59f534433"
   }
   vpc_id = "vpc-0e095b1b964f8765a"
 }
